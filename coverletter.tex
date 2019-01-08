@@ -1,0 +1,167 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, spanish, letterpaper]{awesome-cv}
+
+% language
+\usepackage{polyglossia}
+\setmainlanguage{spanish}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[circle,noedge,left]{profile}
+\name{Ian D.}{Mejias}
+\position{Desarrollador Full Stack}
+\address{Victoria 349, Quilpué, Región de Valparaíso.}
+
+\mobile{(+56) 95447 1278}
+\email{idmconejeros@gmail.com}
+% \homepage{www.posquit0.com}
+\github{bangaa}
+% \linkedin{posquit0}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+\quote{``La persona sabia (o virtuosa) es aquella que sabe lo que es bueno y 
+que espontáneamente lo realiza."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Vicerrectoría Académica}
+  {Dirección General de Docencia\\Av. España 1680\\Valparaíso}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Aplicación de Ingreso a nivel intermedio}
+% How the letter is opened
+\letteropening{Estimado/a Responsable de aceptación}
+% How the letter is closed
+\letterclosing{Sinceramente,}
+% Any enclosures with the letter
+% \letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Ian D. Mejias~~~·~~~Carta de presentación}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Acerca de mi}
+
+Mi nombre es Ian y tengo 27 años, de los cuáles 6 años fueron como estudiante 
+  de la Universidad de Santiago de Chile en la carrera Ingeniería Civil en 
+  Informática. En la Universidad fui ayudante por más de 3 años en diversas 
+  asignaturas y con diversas responsabilidades; no sólo porque me ayudaba a 
+  pagar mi locomoción y material de estudio sino porque me gustaba hacerlo y 
+  era bueno haciéndolo. Me destaqué en varias asignaturas y me hice reconocer 
+  por varios profesores debido a mis habilidades, mi asertividad y mi buena 
+  educación, pero dentro de todo fui un estudiante promedio pero esforzado.
+
+  En el año 2016, debido a una serie de eventos desafortunados y sumándole a 
+  eso mi personalidad, me dio una depresión crónica que no me permitió seguir 
+  con mis estudios. Congelé la Universidad 3 semestres (presentando los 
+  respectivos certificados médicos) pero luego del último me comunicaron que 
+  no podía volver a hacerlo y por no estar ``listo" para volver a la 
+  Universidad simplemente no volví a matricularme.
+
+  Escribo esta carta para ser considerado como futuro estudiante y para pedir 
+  la ayuda necesaria para terminar mi carrera en la que estuve tan cerca de 
+  titularme.
+
+\lettersection{¿Por qué USM?}
+
+Porque cuando pienso en estudiar Ingeniería las únicas Universidades que se me 
+  vienen a la mente son la USACH y la Universidad Federico Santa María.  
+  Siento que puedo seguir creciendo en esta Universidad y que me puede 
+  entregar mucho, y yo espero que con todo lo que he aprendido pueda 
+  entregarle algo también.
+
+\lettersection{¿Por qué yo?}
+
+  Siento que estoy en el {\em peak} de mi vida, soy inteligente y capaz, 
+  creo ser moralmente y éticamente correcto y me esfuerzo en ser la mejor 
+  versión de mi todo el tiempo; siempre buscando alcanzar la maestría ética.  
+  Luego de cambiarme de domicilio 3 veces (después del incidente) mi vida se 
+  ordenó y estabilizó haciendome madurar como ser humano.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
